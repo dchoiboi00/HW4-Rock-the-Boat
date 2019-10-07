@@ -10,11 +10,48 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var boatImage: UIImageView!
+    @IBOutlet weak var rockButton: UIButton!
+    @IBOutlet weak var sun_cloudsStackView: UIStackView!
+    @IBOutlet weak var buttonBottomConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        showButton(false)
+        sun_cloudsStackView.center.y = -300
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //First animation: Alpha animation to fade into an UIImageview
+        UIView.animate(withDuration: 2.5, animations: {
+            self.boatImage?.alpha = 1.0
+        })
+        
+        showButton(true)
+        stackViewAnimation()
+    }
+    
+    //Second animation: Positional, on a stack view
+    func stackViewAnimation (){
+        UIView.animate(withDuration: 2.0, delay: 1.0, animations: {
+            self.sun_cloudsStackView.center.y = 64
+        })
+    }
+    
+    //Third animation: Three levels of nesting on an UIImageview
+    
+    //Fourth animation: Constraint
+    func showButton(_ show: Bool) {
+        let delay = show ? 2.0 : 0.0
+        let yPos = show ? self.view.frame.height : -self.view.frame.height
+        UIView.animate(withDuration: 2, delay: delay, options: [.curveEaseInOut], animations: {
+            self.buttonBottomConstraint?.constant += yPos
+            print(yPos)
+            self.view.layoutIfNeeded()
+        })
+    }
+    
 }
 
