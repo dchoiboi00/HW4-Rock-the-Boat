@@ -30,21 +30,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="str_rocktheboat"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="oM8-im-rXX">
-                                <rect key="frame" x="0.0" y="66" width="2150.5" height="949.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="oM8-im-rXX">
+                                <rect key="frame" x="50" y="64" width="314" height="138.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="PB9-U9-1D2">
-                                        <rect key="frame" x="0.0" y="0.0" width="949.50000000000023" height="949.50000000000023"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="90.000000000000227" height="90.000000000000227"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="PB9-U9-1D2" secondAttribute="height" multiplier="1:1" id="Ap9-Kw-l36"/>
+                                            <constraint firstAttribute="width" constant="90" id="FED-fg-WGz"/>
+                                        </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="q08-JT-Cdd">
-                                        <rect key="frame" x="950.5" y="0.0" width="1200" height="658"/>
+                                        <rect key="frame" x="140" y="0.0" width="174" height="138.5"/>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oM8-im-rXX" secondAttribute="height" multiplier="2150:949" id="Zvj-u1-O6v"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.56916991085772417" green="1" blue="0.92137097552104841" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="oM8-im-rXX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="26c-RD-xpE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oM8-im-rXX" secondAttribute="trailing" constant="50" id="3sw-41-2il"/>
+                            <constraint firstItem="oM8-im-rXX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="66c-Qy-xYn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0X7-Cr-eqx" secondAttribute="bottom" constant="30" id="ain-dJ-Dkv"/>
                             <constraint firstItem="Rkc-Qr-pgG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fI3-fi-eAZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0X7-Cr-eqx" secondAttribute="trailing" constant="20" id="rhi-Se-fm4"/>
