@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         //First animation: Alpha animation to fade into an UIImageview
-        UIView.animate(withDuration: 3.0, animations: {
+        UIView.animate(withDuration: 2.0, animations: {
             self.boatImage?.alpha = 1.0
         })
         
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     
     //Fourth animation: Constraint
     func showButton(_ show: Bool) {
-        let delay = show ? 4.0 : 0.0
+        let delay = show ? 1.0 : 0.0
         let yPos = show ? self.view.frame.height : -self.view.frame.height
         UIView.animate(withDuration: 2, delay: delay, options: [.curveEaseInOut], animations: {
             self.buttonBottomConstraint?.constant += yPos
