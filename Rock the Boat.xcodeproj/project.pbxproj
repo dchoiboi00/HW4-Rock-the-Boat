@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D25E7C78234BF806006F4E3F /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E7C77234BF806006F4E3F /* UIImageViewExtension.swift */; };
+		D25E7C7D234C0783006F4E3F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D25E7C7A234C0783006F4E3F /* Localizable.strings */; };
 		D2D930B0234BD3C6006C0C42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D930AF234BD3C6006C0C42 /* AppDelegate.swift */; };
 		D2D930B2234BD3C6006C0C42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D930B1234BD3C6006C0C42 /* ViewController.swift */; };
 		D2D930B5234BD3C6006C0C42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D930B3234BD3C6006C0C42 /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		D25E7C77234BF806006F4E3F /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		D25E7C7B234C0783006F4E3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D25E7C7C234C0783006F4E3F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D2D930AC234BD3C6006C0C42 /* Rock the Boat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock the Boat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D930AF234BD3C6006C0C42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2D930B1234BD3C6006C0C42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D25E7C79234C0783006F4E3F /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				D25E7C7A234C0783006F4E3F /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 		D2D930A3234BD3C6006C0C42 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +94,7 @@
 				D2D930B1234BD3C6006C0C42 /* ViewController.swift */,
 				D2D930B3234BD3C6006C0C42 /* Main.storyboard */,
 				D25E7C77234BF806006F4E3F /* UIImageViewExtension.swift */,
+				D25E7C79234C0783006F4E3F /* Localizable */,
 				D2D930B6234BD3CA006C0C42 /* Assets.xcassets */,
 				D2D930B8234BD3CA006C0C42 /* LaunchScreen.storyboard */,
 				D2D930BB234BD3CA006C0C42 /* Info.plist */,
@@ -163,6 +175,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = D2D930A3234BD3C6006C0C42;
 			productRefGroup = D2D930AD234BD3C6006C0C42 /* Products */;
@@ -181,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D930BA234BD3CA006C0C42 /* LaunchScreen.storyboard in Resources */,
+				D25E7C7D234C0783006F4E3F /* Localizable.strings in Resources */,
 				D2D930B7234BD3CA006C0C42 /* Assets.xcassets in Resources */,
 				D2D930B5234BD3C6006C0C42 /* Main.storyboard in Resources */,
 			);
@@ -225,6 +239,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D25E7C7A234C0783006F4E3F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D25E7C7B234C0783006F4E3F /* en */,
+				D25E7C7C234C0783006F4E3F /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		D2D930B3234BD3C6006C0C42 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

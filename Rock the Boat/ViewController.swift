@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         showButton(false)
         sun_cloudsStackView.center.y = -300
+        
+        rockButton.setTitle(NSLocalizedString("str_rock", comment: ""), for: .normal)
     }
 
     override func viewWillAppear(_ animated: Bool) {
