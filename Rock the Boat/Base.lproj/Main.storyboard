@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_1" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,18 +15,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rock_the_Boat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boat" translatesAutoresizingMaskIntoConstraints="NO" id="Rkc-Qr-pgG">
-                                <rect key="frame" x="82" y="350" width="250" height="196"/>
+                                <rect key="frame" x="323" y="109" width="250" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="9Rw-J2-ga7"/>
                                     <constraint firstAttribute="width" secondItem="Rkc-Qr-pgG" secondAttribute="height" multiplier="256:201" id="CAN-2U-S2U"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0X7-Cr-eqx">
-                                <rect key="frame" x="20" y="813" width="374" height="44"/>
+                                <rect key="frame" x="64" y="344" width="768" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="str_rocktheboat"/>
                                 <connections>
@@ -34,26 +34,23 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFit" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oM8-im-rXX">
-                                <rect key="frame" x="50" y="64" width="294" height="100"/>
+                                <rect key="frame" x="94" y="20" width="196.5" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="PB9-U9-1D2">
-                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="PB9-U9-1D2" secondAttribute="height" multiplier="1:1" id="Ap9-Kw-l36"/>
-                                            <constraint firstAttribute="height" constant="70" id="Ixd-hg-aCd"/>
+                                            <constraint firstAttribute="height" constant="50" id="Ixd-hg-aCd"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="q08-JT-Cdd">
-                                        <rect key="frame" x="100" y="0.0" width="194" height="100"/>
+                                        <rect key="frame" x="80" y="0.0" width="116.5" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="OaB-oB-imX"/>
+                                            <constraint firstAttribute="height" constant="60" id="OaB-oB-imX"/>
                                             <constraint firstAttribute="width" secondItem="q08-JT-Cdd" secondAttribute="height" multiplier="97:50" id="WgG-Mj-3bP"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="iIv-1E-pkV"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.58517612768363758" green="0.92591583724232651" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
