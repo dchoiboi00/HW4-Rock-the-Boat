@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         //First animation: Alpha animation to fade into an UIImageview
-        UIView.animate(withDuration: 2.0, animations: {
+        UIView.animate(withDuration: 2.5, animations: {
             self.boatImage?.alpha = 1.0
         })
         
